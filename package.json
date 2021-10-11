@@ -5,7 +5,8 @@
     "scripts": {
         "lint": "eslint 'src/**' --fix",
         "format": "prettier --write src/",
-        "dist": "tsc -p tsconfig.json"
+        "dist": "tsc -p tsconfig.json",
+        "start": "NODE_ENV=production node bin/Server.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
