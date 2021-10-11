@@ -1,0 +1,1 @@
+{"version":3,"file":"ServerError.d.ts","sourceRoot":"","sources":["../../src/utils/ServerError.ts"],"names":[],"mappings":"AAAA,qBAAa,QAAS,SAAQ,KAAK;IAEpB,UAAU,EAAE,MAAM;IAClB,MAAM,EAAE,MAAM;IACd,OAAO,EAAE,MAAM;gBAFf,UAAU,EAAE,MAAM,EAClB,MAAM,EAAE,MAAM,EACd,OAAO,EAAE,MAAM;CAI7B"}
