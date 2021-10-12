@@ -9,6 +9,7 @@ export const contactUsController = async (
     next: NextFunction
 ) => {
     const { name, email }: { name: string; email: string } = req.body;
+
     if (validateEmail(email))
         try {
             const info = await sendEmail({

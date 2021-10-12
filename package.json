@@ -6,7 +6,8 @@
         "lint": "eslint 'src/**' --fix",
         "format": "prettier --write src/",
         "dist": "tsc -p tsconfig.json",
-        "start": "NODE_ENV=production node bin/Server.js"
+        "start": "NODE_ENV=production node bin/Server.js",
+        "dev" : "npm run dist && npm start"
     },
     "dependencies": {
         "cors": "^2.8.5",

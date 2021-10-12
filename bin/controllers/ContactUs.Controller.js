@@ -6,6 +6,7 @@ const EmailValidator_1 = require("../utils/EmailValidator");
 const ServerError_1 = require("../utils/ServerError");
 const contactUsController = async (req, res, next) => {
     const { name, email } = req.body;
+    console.log(name, email);
     if ((0, EmailValidator_1.validateEmail)(email))
         try {
             const info = await (0, MailSender_1.sendEmail)({
