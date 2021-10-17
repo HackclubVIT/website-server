@@ -20,7 +20,7 @@ Make changes to the typescript, then run `npm run dist` to build the typescript 
 
 For testing email services during development, [mailtrap](https://mailtrap.io/) is used. Create a temporary inbox there, and add your temporary username and password to the environment variables `MAILTRAP_USER` and `MAILTRAP_PASS` respectively. You will see the trapped SMTP traffic on your mailtrap inbox, like below
 
-<img src = https://i.imgur.com/FPCHPmR.png>
+<img src = https://i.imgur.com/FPCHPmR.png style="max-height: 320px; max-width: 320px;">
 
 You can view the full mailtrap docs [here](https://mailtrap.docs.apiary.io/)
 
