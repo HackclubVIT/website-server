@@ -8,17 +8,14 @@ import { join } from "path";
 
 const app = express();
 
-app.use(cors());
-
-app.use(helmet());
-
-app.use(express.json({ limit: "15kb" }));
-
-app.use(express.urlencoded({ extended: false }));
-
+app.use(
+    cors(),
+    helmet(),
+    express.json({ limit: "15kb" }),
+    express.urlencoded({ extended: false }),
+    express.static(join(__dirname, "../public"))
+);
 app.use("/api", apiRouter);
-
-app.use(express.static(join(__dirname, "../public")));
 
 app.use("*", (_req, _res, next) => {
     next(new ApiError(404, "fail", "attempt to navigate to undefined route"));

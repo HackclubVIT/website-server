@@ -14,7 +14,8 @@ export const contactUsController = async (
         try {
             const info = await sendEmail({
                 to: email,
-                text: `Hi ${name}`,
+                text: `Hi ${name || "hacker"}`, //for testing
+                // can fill this with html: our_html_template
             });
             res.status(200).json(info);
         } catch (error) {

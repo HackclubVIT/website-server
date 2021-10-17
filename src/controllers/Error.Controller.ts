@@ -7,7 +7,11 @@ export const errorController = (
     res: Response,
     _next: NextFunction
 ) => {
-    res.status(err.statusCode || 500).json({
-        message: err.message,
+    const statusCode = err.statusCode || 500;
+    res.status(statusCode).json({
+        message:
+            statusCode >= 500
+                ? "An internal server error has occured. Please try later"
+                : err.message,
     });
 };
