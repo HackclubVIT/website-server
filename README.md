@@ -24,9 +24,7 @@ For testing email services during development, [mailtrap](https://mailtrap.io/) 
 
 You can view the full mailtrap docs [here](https://mailtrap.docs.apiary.io/)
 
-#### Environment
-
-During development, you can fill in the environment variable `EMAIL_ADDRESS` with a arbitrary regex-valid email address (the address need not exist). For production, this will be replaced by the actual hackclub email address
+During development, you can fill in the environment variable `EMAIL_ADDRESS` with a arbitrary regex-valid email address (the address need not exist). For production, this will be replaced by the actual hackclub email address.
 
 Since [dotenv](https://www.npmjs.com/package/dotenv) has been set up, you can enter your environment variables into a `.env` file in the root of the project. Make sure to not commit the `.env` file to git. (It has already been added to `.gitignore`).
 
